@@ -1,0 +1,30 @@
+﻿------ Build started: Project: can-bridge-firmware, Configuration: Debug AVR ------
+Build started.
+Project "can-bridge-firmware.cproj" (default targets):
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "CoreBuild" in file "C:\Program Files (x86)\Atmel\Studio\7.0\Vs\Compiler.targets" from project "C:\Users\kajzw\Documents\muxsan\kangoo-test-bridge\can-bridge-firmware.cproj" (target "Build" depends on it):
+	Using "RunCompilerTask" task from assembly "C:\Program Files (x86)\Atmel\Studio\7.0\Extensions\Application\AvrGCC.dll".
+	Task "RunCompilerTask"
+		Shell Utils Path C:\Program Files (x86)\Atmel\Studio\7.0\shellUtils
+		C:\Program Files (x86)\Atmel\Studio\7.0\shellUtils\make.exe all --jobs 16 --output-sync 
+		make: Nothing to be done for 'all'.
+	Done executing task "RunCompilerTask".
+	Using "RunOutputFileVerifyTask" task from assembly "C:\Program Files (x86)\Atmel\Studio\7.0\Extensions\Application\AvrGCC.dll".
+	Task "RunOutputFileVerifyTask"
+				Program Memory Usage 	:	10766 bytes   29,2 % Full
+				Data Memory Usage 		:	1862 bytes   45,5 % Full
+				Warning: Memory Usage estimation may not be accurate if there are sections other than .text sections in ELF file
+	Done executing task "RunOutputFileVerifyTask".
+Done building target "CoreBuild" in project "can-bridge-firmware.cproj".
+Target "PostBuildEvent" in file "C:\Program Files (x86)\Atmel\Studio\7.0\Vs\Avr.common.targets" from project "C:\Users\kajzw\Documents\muxsan\kangoo-test-bridge\can-bridge-firmware.cproj" (target "Build" depends on it):
+	Using "Exec" task from assembly "Microsoft.Build.Tasks.Core, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+	Task "Exec"
+		"C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O binary can-bridge-firmware.elf FLASH.BIN
+	Done executing task "Exec".
+Done building target "PostBuildEvent" in project "can-bridge-firmware.cproj".
+Target "Build" in file "C:\Program Files (x86)\Atmel\Studio\7.0\Vs\Avr.common.targets" from project "C:\Users\kajzw\Documents\muxsan\kangoo-test-bridge\can-bridge-firmware.cproj" (entry point):
+Done building target "Build" in project "can-bridge-firmware.cproj".
+Done building project "can-bridge-firmware.cproj".
+
+Build succeeded.
+========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========
